@@ -1,0 +1,14 @@
+{
+  "name": "littleflowerguy",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@zefman/gridsome-source-instagram": "^0.1.2",
+    "gridsome": "^0.6.0",
+    "gridsome-plugin-tailwindcss": "^2.2.23"
+  }
+}
