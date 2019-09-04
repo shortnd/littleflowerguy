@@ -15,20 +15,11 @@
       <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
     </p>
 
-    <div class="container mx-auto flex">
-      <div class="flex-1" v-for="edge in $page.photos.edges" :key="edge.node.id">
+    <div class="container mx-auto flex flex-wrap">
+      <div class="w-1/2 h-1/2 flex" v-for="edge in $page.photos.edges" :key="edge.node.id">
         <g-image :src="edge.node.display_url"/>
       </div>
     </div>
-
-    <ul>
-      <li v-for="edge in $page.photos.edges" :key="edge.node.id">
-        <g-image :src="edge.node.display_url"/>
-      </li>
-      <!-- <li v-for="(item, index) in $page.allInstagramPhoto.edges" :key="index">
-        {{ item }}
-      </li> -->
-    </ul>
 
   </Layout>
 </template>
